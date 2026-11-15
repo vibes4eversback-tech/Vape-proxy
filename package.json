@@ -23,7 +23,7 @@
     "@mercuryworkshop/epoxy-transport": "file:vendor/mercuryworkshop-epoxy-transport-2.1.28-epx.e5f13bb.tgz",
     "@mercuryworkshop/libcurl-transport": "^1.5.2",
     "@useinterstellar/scramjet": "^1.1.0-fixed",
-    "@mercuryworkshop/wisp-js": "^0.4.1",
+    "@mercuryworkshop/wisp-js": "^0.5.3",
     "@titaniumnetwork-dev/ultraviolet": "^3.2.10",
     "chalk": "^5.4.1",
     "cookie-parser": "^1.4.7",

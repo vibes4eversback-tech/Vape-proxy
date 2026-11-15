@@ -36,8 +36,8 @@ importers:
         specifier: ^1.5.2
         version: 1.5.2
       '@mercuryworkshop/wisp-js':
-        specifier: ^0.4.1
-        version: 0.4.1
+        specifier: ^0.5.3
+        version: 0.5.3
       '@titaniumnetwork-dev/ultraviolet':
         specifier: ^3.2.10
         version: 3.2.10
@@ -343,6 +343,7 @@ packages:
 
   '@mercuryworkshop/bare-mux@2.1.9':
     resolution: {integrity: sha512-fiOqWm3VP0Bl8T+0l+qnb7ab9zO+PpKVbtJvOnMsefUv6kWIaoDtqyr9hd/t4gA8oBwgtyZVqIwO2J9nKY9ylw==}
+    deprecated: this is deprecated and will no longer be recieving updates, please use proxy-transports instead
 
   '@mercuryworkshop/epoxy-tls@file:vendor/mercuryworkshop-epoxy-tls-2.1.19-1-e5f13bb.tgz':
     resolution: {integrity: sha512-+pc93YyY4yrW2l9cstzSz2LLuVDon6p1aUvjUr8oheS2ydRdN+tRF+rjKUVoGdBg/GzUVSQVoqzEAdEX8To0lQ==, tarball: file:vendor/mercuryworkshop-epoxy-tls-2.1.19-1-e5f13bb.tgz}
@@ -355,8 +356,8 @@ packages:
   '@mercuryworkshop/libcurl-transport@1.5.2':
     resolution: {integrity: sha512-E0tD/3W6HE99ypc7CStpchU6xs+TP5u2vms/9q/46BShblB2pbRCNeXHBlvXqdz97nh2Xh4A68DryDt5CM29Dg==}
 
-  '@mercuryworkshop/wisp-js@0.4.1':
-    resolution: {integrity: sha512-104LwiXiuhti/e32gmv0Da0u0yuLFDHX8JawCzleTPWJ5t5qTX4EYi4E7/ucbjBPN9wwVPWHE5g5yGqzl/NzQA==}
+  '@mercuryworkshop/wisp-js@0.5.3':
+    resolution: {integrity: sha512-kEvnBt57x0g39HPatsYWXXboDYx79/eQxuGD2Ym9c5+LFGbKZa2Hbv6neBhwhlS23u73Y6ZTFqb2VVJNUoejGg==}
     hasBin: true
 
   '@titaniumnetwork-dev/ultraviolet@3.2.10':
@@ -446,8 +447,8 @@ packages:
   buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
 
-  bufferutil@4.1.0:
-    resolution: {integrity: sha512-ZMANVnAixE6AWWnPzlW2KpUrxhm9woycYvPOo67jWHyFowASTEd9s+QN1EIMsSDtwhIxN4sWE1jotpuDUIgyIw==}
+  bufferutil@4.2.0:
+    resolution: {integrity: sha512-gyy58jET9kst2IGyBKb96a4Y2bPGTHXGyCd0/1eqIV3hr1Sz3VxtA8n7bXh8fLIuE2K6Z0Upax5a5Msx+HU1IQ==}
     engines: {node: '>=6.14.2'}
 
   bytes@3.1.2:
@@ -502,9 +503,9 @@ packages:
     resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
     engines: {node: '>=18'}
 
-  commander@14.0.3:
-    resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
-    engines: {node: '>=20'}
+  commander@15.1.0:
+    resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
+    engines: {node: '>=22.12.0'}
 
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
@@ -799,8 +800,8 @@ packages:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
     engines: {node: '>= 0.10'}
 
-  ipaddr.js@2.3.0:
-    resolution: {integrity: sha512-Zv/pA+ciVFbCSBBjGfaKUya/CcGmUHzTydLMaTwrUUEM2DIEO3iZvueGxmacvmN50fGpGVKeTXpb2LcYQxeVdg==}
+  ipaddr.js@2.5.0:
+    resolution: {integrity: sha512-aq+t5NAc+cS6rZQQVWC2x98CPqGtKKTMDd4Gaodv0wShnItdKg/51djkGJ1hqH+Oy0ivDftCbSLCQob8zso01w==}
     engines: {node: '>= 10'}
 
   is-arguments@1.2.0:
@@ -1190,8 +1191,8 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  ws@8.23.0:
-    resolution: {integrity: sha512-wCkmX8QMOrKjgO8HW2WyDbTSGeqkocxgDzS9iR79rEAexty6/2qzilx3Ag8Tqf9ykop3irLKle0MtVn5qjVnoQ==}
+  ws@8.22.2:
+    resolution: {integrity: sha512-/rEZ2ejown2N5gxVTHUu9bVVC7ttu0/Tgzf5hbTOixR3Fs7mbbXgn2DbdbcKgJOmpQMtrIUWivtYuVMnp/W/yA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -1405,12 +1406,12 @@ snapshots:
     dependencies:
       libcurl.js: 0.7.4
 
-  '@mercuryworkshop/wisp-js@0.4.1':
+  '@mercuryworkshop/wisp-js@0.5.3':
     dependencies:
-      bufferutil: 4.1.0
-      commander: 14.0.3
-      ipaddr.js: 2.3.0
-      ws: 8.23.0(bufferutil@4.1.0)
+      bufferutil: 4.2.0
+      commander: 15.1.0
+      ipaddr.js: 2.5.0
+      ws: 8.22.2(bufferutil@4.2.0)
     transitivePeerDependencies:
       - utf-8-validate
 
@@ -1520,7 +1521,7 @@ snapshots:
 
   buffer-from@1.1.2: {}
 
-  bufferutil@4.1.0:
+  bufferutil@4.2.0:
     dependencies:
       node-gyp-build: 4.8.4
 
@@ -1574,7 +1575,7 @@ snapshots:
 
   commander@12.1.0: {}
 
-  commander@14.0.3: {}
+  commander@15.1.0: {}
 
   commander@2.20.3: {}
 
@@ -1880,7 +1881,7 @@ snapshots:
 
   ipaddr.js@1.9.1: {}
 
-  ipaddr.js@2.3.0: {}
+  ipaddr.js@2.5.0: {}
 
   is-arguments@1.2.0:
     dependencies:
@@ -2308,6 +2309,6 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  ws@8.23.0(bufferutil@4.1.0):
+  ws@8.22.2(bufferutil@4.2.0):
     optionalDependencies:
-      bufferutil: 4.1.0
+      bufferutil: 4.2.0
