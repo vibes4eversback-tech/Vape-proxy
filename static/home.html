@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#120a1d" />
+  <link rel="shortcut icon" id="tab-favicon" href="/assets/media/favicon/thesaurus.png" />
+  <title id="page-title">Vape</title>
+  <link rel="stylesheet" href="/assets/css/global.css" />
+  <link rel="stylesheet" href="/assets/css/home.css" />
+  <link rel="stylesheet" href="/assets/css/nav.css" />
+  <link rel="stylesheet" href="/assets/css/welcome.css" />
+  <script src="/assets/js/storage.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="center home-page" data-visual-theme="purple">
+  <div class="nav-bar" aria-hidden="true"></div>
+  <main class="main welcome-main">
+    <a class="wordmark" href="/home" aria-label="Vape home"><span class="wordmark-mark">✳</span> Vape</a>
+
+    <section class="onboarding" id="onboarding" aria-live="polite" hidden>
+      <div class="eyebrow"><span class="eyebrow-line"></span> YOUR SPACE, YOUR WAY <span class="eyebrow-line"></span></div>
+      <div class="setup-step" id="name-step">
+        <h1>Let’s get you set up.</h1>
+        <p class="step-description">What should we call you?</p>
+        <form class="name-form" id="name-form">
+          <label class="sr-only" for="welcome-name">Your name</label>
+          <input class="name-input" id="welcome-name" name="name" type="text" maxlength="24" autocomplete="nickname" placeholder="Your name" required />
+          <button class="primary-button" type="submit" aria-label="Continue"><span>Continue</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+        </form>
+        <p class="privacy-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> Just for this device. Saved privately in your browser.</p>
+      </div>
+      <div class="setup-step theme-step" id="theme-step" hidden>
+        <h1 id="setup-greeting">Hey, let’s get started.</h1>
+        <p class="step-description">Choose a theme</p>
+        <div class="theme-options" role="group" aria-label="Choose a theme">
+          <button class="theme-option" type="button" data-theme-choice="purple" aria-pressed="false">
+            <span class="theme-preview preview-purple"><span class="preview-moon"></span><span class="preview-horizon"></span></span>
+            <span class="theme-option-copy"><strong>Purple minimalistic</strong><span>Moonlit, calm, a little cosmic.</span></span>
+            <span class="theme-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          </button>
+          <button class="theme-option" type="button" data-theme-choice="landscape" aria-pressed="false">
+            <span class="theme-preview preview-landscape"><span class="preview-sun"></span><span class="preview-shore"></span></span>
+            <span class="theme-option-copy"><strong>Landscape</strong><span>Soft sunset colors over the water.</span></span>
+            <span class="theme-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          </button>
+        </div>
+        <button class="primary-button finish-button" id="finish-setup" type="button" disabled><span>Continue to Vape</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+        <button class="text-button" id="back-to-name" type="button"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Change your name</button>
+      </div>
+    </section>
+
+    <section class="home-content" id="home-content" hidden>
+      <div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE SPACE TO EXPLORE <span class="eyebrow-line"></span></div>
+      <h1 class="greeting" id="home-greeting">Hey, let’s get started.</h1>
+      <p class="home-subtitle">Where to today?</p>
+      <div class="search-container">
+        <form id="search-form" method="POST" role="search">
+          <label class="sr-only" for="input">Search the web or enter a URL</label>
+          <span class="search-icon fa-solid fa-magnifying-glass" aria-hidden="true"></span>
+          <input id="input" class="truncate" name="url" placeholder="Search the web or enter a URL" type="text" autocomplete="off" />
+          <button class="search-submit" type="submit" aria-label="Go"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+        </form>
+        <div class="search-meta-row">
+          <div class="proxy-picker">
+            <button class="proxy-trigger" id="proxy-trigger" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="proxy-menu">
+              <span class="proxy-trigger-dot" aria-hidden="true"></span>
+              <span id="proxy-current-label">Normal proxy</span>
+              <i class="fa-solid fa-chevron-down proxy-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="proxy-menu" id="proxy-menu" role="menu" aria-label="Choose a proxy" hidden>
+              <button class="proxy-menu-option" type="button" role="menuitemradio" aria-checked="true" data-proxy-choice="normal">
+                <span class="proxy-menu-icon"><i class="fa-solid fa-compass" aria-hidden="true"></i></span>
+                <span class="proxy-menu-copy"><strong>Normal proxy</strong><small>Interstellar</small></span>
+                <i class="fa-solid fa-check proxy-menu-check" aria-hidden="true"></i>
+              </button>
+              <button class="proxy-menu-option" type="button" role="menuitemradio" aria-checked="false" data-proxy-choice="invisiproxy">
+                <span class="proxy-menu-icon"><i class="fa-solid fa-shuffle" aria-hidden="true"></i></span>
+                <span class="proxy-menu-copy"><strong>InvisiProxy <span class="proxy-alt-tag">ALT</span></strong><small>Alternate route</small></span>
+                <i class="fa-solid fa-check proxy-menu-check" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <p class="search-hint">Search anything or paste a link <kbd>↵</kbd></p>
+        </div>
+      </div>
+    </section>
+    <button class="personalize-button" id="personalize" type="button"><i class="fa-solid fa-sliders" aria-hidden="true"></i> Personalize</button>
+
+    <p id="splash" hidden></p>
+    <button id="about-blank-button" type="button" hidden>Open in about:blank</button>
+    <div class="bottom-note"><span class="status-dot"></span> A clearer way to wander</div>
+  </main>
+  <script src="/assets/js/vendor.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/home.js"></script>
+  <script src="./assets/ultraviolet/uv.bundle.js"></script>
+  <script src="./assets/ultraviolet/uv.config.js"></script>
+  <script src="/assets/scramjet/scramjet.all.js"></script>
+  <script src="/assets/scramjet/scramjet.config.js"></script>
+  <script src="/assets/js/welcome.js"></script>
+  <script src="/assets/js/proxy-picker.js"></script>
+  <script src="/assets/js/analytics.js"></script>
+</body>
+</html>
