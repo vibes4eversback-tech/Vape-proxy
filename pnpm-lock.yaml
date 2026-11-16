@@ -63,8 +63,8 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
       mime:
-        specifier: ^4.1.0
-        version: 4.1.0
+        specifier: ^4.1.2
+        version: 4.1.2
       node-fetch:
         specifier: ^3.3.2
         version: 3.3.2
@@ -343,6 +343,7 @@ packages:
 
   '@mercuryworkshop/bare-mux@2.1.9':
     resolution: {integrity: sha512-fiOqWm3VP0Bl8T+0l+qnb7ab9zO+PpKVbtJvOnMsefUv6kWIaoDtqyr9hd/t4gA8oBwgtyZVqIwO2J9nKY9ylw==}
+    deprecated: this is deprecated and will no longer be recieving updates, please use proxy-transports instead
 
   '@mercuryworkshop/epoxy-tls@file:vendor/mercuryworkshop-epoxy-tls-2.1.19-1-e5f13bb.tgz':
     resolution: {integrity: sha512-+pc93YyY4yrW2l9cstzSz2LLuVDon6p1aUvjUr8oheS2ydRdN+tRF+rjKUVoGdBg/GzUVSQVoqzEAdEX8To0lQ==, tarball: file:vendor/mercuryworkshop-epoxy-tls-2.1.19-1-e5f13bb.tgz}
@@ -898,8 +899,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  mime@4.1.0:
-    resolution: {integrity: sha512-X5ju04+cAzsojXKes0B/S4tcYtFAJ6tTMuSPBEn9CPGlrWr8Fiw7qYeLT0XyH80HSoAoqWCaz+MWKh22P7G1cw==}
+  mime@4.1.2:
+    resolution: {integrity: sha512-ikRzZ2RwbUVDyL9SsU0f2Phcmav4yq5r8faH5ZZKHtOZrMBLnrQOrj0uvqZ5R1uQnj+RO7Wcklw/lAf81mP9LQ==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -1987,7 +1988,7 @@ snapshots:
 
   mime@1.6.0: {}
 
-  mime@4.1.0: {}
+  mime@4.1.2: {}
 
   mimic-function@5.0.1: {}
 
