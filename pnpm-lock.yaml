@@ -45,8 +45,8 @@ importers:
         specifier: ^1.1.0-fixed
         version: 1.1.0-fixed
       chalk:
-        specifier: ^5.4.1
-        version: 5.4.1
+        specifier: ^6.0.1
+        version: 6.0.1
       cookie-parser:
         specifier: ^1.4.7
         version: 1.4.7
@@ -343,6 +343,7 @@ packages:
 
   '@mercuryworkshop/bare-mux@2.1.9':
     resolution: {integrity: sha512-fiOqWm3VP0Bl8T+0l+qnb7ab9zO+PpKVbtJvOnMsefUv6kWIaoDtqyr9hd/t4gA8oBwgtyZVqIwO2J9nKY9ylw==}
+    deprecated: this is deprecated and will no longer be recieving updates, please use proxy-transports instead
 
   '@mercuryworkshop/epoxy-tls@file:vendor/mercuryworkshop-epoxy-tls-2.1.19-1-e5f13bb.tgz':
     resolution: {integrity: sha512-+pc93YyY4yrW2l9cstzSz2LLuVDon6p1aUvjUr8oheS2ydRdN+tRF+rjKUVoGdBg/GzUVSQVoqzEAdEX8To0lQ==, tarball: file:vendor/mercuryworkshop-epoxy-tls-2.1.19-1-e5f13bb.tgz}
@@ -470,9 +471,9 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chalk@5.4.1:
-    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+  chalk@6.0.1:
+    resolution: {integrity: sha512-/Ce6KNm3vIbWdMlNna6RVIZ/ICQxnJxCicet5LBKK9ZffBkqzDw0xh9EiKSljdRtiIQ1S1z4YgcscUUGzNCWrA==}
+    engines: {node: '>=22'}
 
   chance@1.1.13:
     resolution: {integrity: sha512-V6lQCljcLznE7tUYUM9EOAnnKXbctE6j/rdQkYOHIWbfGQbrzTsAXNW9CdU5XCo4ArXQCj/rb6HgxPlmGJcaUg==}
@@ -1548,7 +1549,7 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  chalk@5.4.1: {}
+  chalk@6.0.1: {}
 
   chance@1.1.13: {}
 
